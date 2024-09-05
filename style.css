@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/* ba thằng lớn */
+.container{
+    max-width: 686px;
+    /* min-height: 660px; */
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #F9F0ED;
+    display: flex;
+}
+
+.left-side{
+    max-width: 20rem;
+    min-width: 17rem;
+    min-height: calc(100% - 3rem);
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #f9c4c4;
+}
+
+.right-side{
+    width: 100%;
+    min-height: 100%;
+    padding: 2rem;
+    border-left: 1px solid black;
+}
+
+.title{
+    font-size: 1.6rem;
+}
+
+.input-item{
+    border: 1px solid black;
+    border-radius: 0%;
+}
+
+.btn-search{
+    width: 5rem;
+    border-radius: 5px;
+    font-size: x-small;
+    background-color: #f9c4c4;
+    color: white;
+}
+
+.card{
+    width: 12rem;
+    padding: 0;
+    margin: 2rem 1rem 0 1rem;
+    border: 1px solid black;
+    border-radius: 0%;
+}
+
+.card:hover{
+    box-shadow: 0 3px 3px 1px #695e5e;
+}
+
+.card-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    background-color: #f9c4c4;
+    height: 4rem;
+};
