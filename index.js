@@ -111,18 +111,18 @@ const removeItemFromLS = (idRemove) => {
 //chức năng filter
 
 //filter theo #filter
-document.querySelector("#filter").addEventListener("keyup", event => {
-    let inputValue = event.target.value //lấy giá trị vừa nhập
-    let list = getList(); //lấy list từ ls
-    //filter
-    let filteredList = list.filter((item) => (item.name.includes(inputValue)) || 
-                                             (item.description.includes(inputValue)));
-    //xoá danh sách UI cũ
-    document.querySelector(".list").innerHTML = "";
-    filteredList.forEach((item) => {
-        addItemToUI(item);
-    });
-});
+// document.querySelector("#filter").addEventListener("keyup", event => {
+//     let inputValue = event.target.value //lấy giá trị vừa nhập
+//     let list = getList(); //lấy list từ ls
+//     //filter
+//     let filteredList = list.filter((item) => (item.name.includes(inputValue)) || 
+//                                              (item.description.includes(inputValue)));
+//     //xoá danh sách UI cũ
+//     document.querySelector(".list").innerHTML = "";
+//     filteredList.forEach((item) => {
+//         addItemToUI(item);
+//     });
+// });
 
 //filter theo .btn-search
 document.querySelector(".btn-search").addEventListener("click", event => {
