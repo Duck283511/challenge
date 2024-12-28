@@ -1,5 +1,5 @@
 //lấy obj vừa chọn ra
-let itemChoice = null;
+let itemChoice = 0;
 document.querySelector(".list").addEventListener("click", event => {
     let list = getList();
     itemChoice = list.find((item) => item.id == event.target.parentElement.parentElement.dataset.id);
@@ -26,7 +26,7 @@ document.querySelector("#input-form").addEventListener("submit", event =>{
     //lưu item vào ls: addItemToLS(item)
     addItemToLS(item);
     //xoá value trong input
-    itemChoice = null;
+    itemChoice = 0;
     document.querySelectorAll(".input-item").forEach(item => {
         item.value = "";
     });
@@ -93,7 +93,7 @@ document.querySelector(".btn-remove").addEventListener("click", eventDel => {
     }else{
         alert("Không có gì để xoá!");
     };
-    itemChoice = null;
+    itemChoice = 0;
     document.querySelectorAll(".input-item").forEach(item => {
         item.value = "";
     });
@@ -153,7 +153,7 @@ document.querySelector(".list").addEventListener("click", event => {
 
 //chức năng clear ô input
 document.querySelector(".btn-clear").addEventListener("click", event => {
-    itemChoice = null;
+    itemChoice = 0;
     document.querySelectorAll(".input-item").forEach(item => {
         item.value = "";
     });
